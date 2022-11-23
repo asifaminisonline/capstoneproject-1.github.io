@@ -32,14 +32,51 @@
  </div>  
  <div class="desktop-navbar">
     <ul>
-        <li><a href="#index.html">Home</a></li>
+        <li><a href="#index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="#">Join</a></li>
-        <li><a href="#">Sponsor</a></li>
-        <li><a href="#">News</a></li>
+        <li><a href="#program">Program</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#partners">Partners</a></li>
         <li id="CC-Campaign"><a href="#">Contact</a></li>
     </ul>
  </div> 
+
+ 
+
+
+
+
+
+
+
+
+ <header class="header" id="fixed">
+  <nav>
+    <button class="hamburger" id="onclick">
+      <div class="bar"></div>
+    </button>
+  </nav>
+  <nav class="mobile-nav">
+    <ul>
+      <li><a href="#index.html" class="mob-active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#program">Program</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#partners">Partners</a></li>
+      <li><a href="#">Contact</a></li>
+  </ul>
+  </nav>
+</header>
+
+
+
+
+
+
+
+
+
+
 </nav>
 
 <section>
@@ -47,7 +84,7 @@
         <h1>Languages And Framrworks</h1>
         <h4 class="heading-4">For Programming In 2022</h4>
         <p class="hero-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusamus et, praesentium obcaecati animi earum officiis error  vitae laboriosam incidunt recusandae</p>
-        <section class="main-program">
+        <section class="main-program" id="program">
     <h3>Main Program</h3>
     <div class="container m-md-auto pt-3">
         <div class="row gap-2">
@@ -91,10 +128,10 @@
 </div>      
 </section>
 
-<section class="dynamic">
+<section class="dynamic" id="team">
     <h1>Our Team</h1>
 </section>
-<section class="partners">
+<section class="partners" id="partners">
     <div class="container">
         <h2>Partners</h2>
         <div class="partner-images">
@@ -111,7 +148,7 @@
     <div class="container">
     <div id="footer-flex">
             <img src="./assets/logo.png">
-            <h5>&copy 2022 google.developers.com</h5>
+            <h5 class="copyrightText">&copy 2022 google.developers.com</h5>
             </div>
     </div>
 </div>
@@ -120,7 +157,7 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-<script src="./Capstone-Project/Script/main.js"></script>
+<script src="./Script/main.js"></script>
 </html>
 
 

@@ -18,6 +18,88 @@ a {
   /* font-size: 16px; */
 }
 
+.hamburger {
+  z-index: 999;
+  position: relative;
+  display: block;
+  width: 40px;
+  cursor: pointer;
+  appearance: none;
+  background: #fff;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 5px;
+  background-color: #cb4633;
+  margin: 6px 0;
+  transition: 0.5s;
+}
+
+.hamburger.is-active::before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+  background-color: #fff;
+}
+
+.hamburger.is-active::after {
+  transform: rotate(45deg) translate(-9px, -8px);
+  background-color: #fff;
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.hamburger.is-active {
+  background-color: #cb4633;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 98;
+  background-color: #cb4633;
+  opacity: 0.95;
+  padding-top: 120px;
+  transition: 0.5s;
+}
+
+.mobile-nav.is-active {
+  left: 0;
+}
+
+.mobile-nav a {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  text-align: left;
+  padding: 12px 16px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 600;
+  position: relative;
+  right: 55px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 20px;
+}
+
 .topSocialBar ul {
   width: auto;
   padding: 0 10%;
@@ -52,8 +134,17 @@ a {
   height: 60px;
 }
 
+.active {
+  color: #cb4633 !important;
+}
+
+.mob-active {
+  color: #cb4633 !important;
+  background-color: #fff;
+}
+
 .desktop-navbar ul {
-  padding-right: 20px;
+  /* padding-right: 20px; */
   display: flex;
   justify-content: flex-start;
 }
@@ -62,8 +153,23 @@ a {
   padding: 10px;
 }
 
+.desktop-navbar ul li a {
+  color: #272a31;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.desktop-navbar li:hover a {
+  color: #cb4633;
+}
+
 #CC-Campaign {
-  border: 3px solid orangered;
+  border: 3px solid #cb4633;
+}
+
+#CC-Campaign a {
+  color: #cb4633 !important;
+  font-weight: 800;
 }
 
 .hero {
@@ -75,7 +181,7 @@ a {
 
 .hero h1 {
   font-weight: 800;
-  color: #ea553d;
+  color: #cb4633;
   height: auto;
   width: 100%;
   padding: 60px 0 0 100px;
@@ -83,7 +189,7 @@ a {
 }
 
 .hero .heading-4 {
-  color: #ea553d;
+  color: #cb4633;
   height: auto;
   width: 100%;
   padding: 0 0 50px 100px;
@@ -126,7 +232,7 @@ a {
 
 .main-program h4 {
   text-align: center;
-  color: #ea553d;
+  color: #cb4633;
   font-weight: 500;
 }
 
@@ -173,8 +279,8 @@ a {
 }
 
 .partner-images img {
-  width: 100px;
-  height: 40px;
+  width: 120px;
+  height: 50px;
   margin: 20px;
 }
 
@@ -188,13 +294,21 @@ a {
   background-color: #d3d3d3;
 }
 
+.aboutFooter {
+  background-color: #2e2e2e;
+}
+
+.aboutCopyrightText {
+  color: white;
+}
+
 #footer-flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#footer-flex h5 {
+#footer-flex .copyrightText {
   padding-top: 10px;
 }
 
@@ -219,7 +333,7 @@ a {
 
 .aboutHeroTitle h1 {
   text-align: center;
-  color: #f74322;
+  color: #cb4633;
   font-weight: 900;
   padding: 50px 0;
 }
@@ -292,7 +406,7 @@ h4 {
 }
 
 .twoImages-1 {
-  background: #c33737;
+  background: #cb4633;
   background: linear-gradient(rgba(240, 240, 240, 0.39), rgba(241, 0, 0, 0.589)), url("/Capstone-Project/assets/achievements-milestone.jpg");
   background-size: cover;
   margin-bottom: 30px;
@@ -301,7 +415,7 @@ h4 {
 }
 
 .twoImages-2 {
-  background: #c33737;
+  background: #cb4633;
   background: linear-gradient(rgba(240, 240, 240, 0.39), rgba(241, 0, 0, 0.589)), url("/Capstone-Project/assets/achievements.jpg");
   background-size: cover;
   margin-bottom: 30px;
@@ -309,14 +423,29 @@ h4 {
   height: 250px;
 }
 
+.twoImageBoxes :hover {
+  transform: scale(1.01);
+  transition: 1s;
+}
+
 @media screen and (min-width: 992px) {
   .main-program .card {
     width: 24%;
   }
+
+  .desktop-navbar ul li {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #fixed {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .nav-container {
+  .desktop-navbar {
     display: none;
   }
 
@@ -325,7 +454,7 @@ h4 {
   }
 
   .hero h1 {
-    color: #ea553d;
+    color: #cb4633;
     height: auto;
     width: 100%;
     padding: 60px 0 0 20px;
@@ -340,10 +469,6 @@ h4 {
     margin: 6px 0 40px 20px;
     width: 80%;
     font-size: 18px;
-  }
-
-  .main-program .card {
-    width: 24%;
   }
 
   .footer img {
