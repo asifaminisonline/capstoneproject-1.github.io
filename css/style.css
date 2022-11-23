@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+body {
+  margin: 0;
+  top: 0;
+  overflow-x: hidden;
+  font-family: "lato", Arial, Helvetica, sans-serif;
+  align-items: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+  /* font-size: 16px; */
+}
+
+.topSocialBar ul {
+  width: auto;
+  padding: 0 10%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #272a31;
+}
+
+.topSocialBar ul li {
+  font-size: 12px;
+  padding: 7px 20px;
+  color: #fff;
+}
+
+.topSocialBar ul li a {
+  color: #fff;
+}
+
+.nav-container {
+  position: sticky;
+  z-index: 999999;
+  top: 0;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  background-color: #fff;
+}
+
+.logo img {
+  width: 180px;
+  height: 60px;
+}
+
+.desktop-navbar ul {
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.desktop-navbar ul li {
+  padding: 10px;
+}
+
+#CC-Campaign {
+  border: 3px solid orangered;
+}
+
+.hero {
+  background-image: url(/Capstone-Project/assets/pexels-daniel-putzer-633409.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -999;
+}
+
+.hero h1 {
+  font-weight: 800;
+  color: #ea553d;
+  height: auto;
+  width: 100%;
+  padding: 60px 0 0 100px;
+  text-align: left;
+}
+
+.hero .heading-4 {
+  color: #ea553d;
+  height: auto;
+  width: 100%;
+  padding: 0 0 50px 100px;
+  text-align: left;
+  font-weight: 800;
+}
+
+.hero .hero-text {
+  border: 2px solid #fff;
+  color: #fff;
+  min-height: 150px;
+  font-size: 22px;
+  height: auto;
+  width: 50%;
+  margin: 6px 0 100px 100px;
+  text-align: left;
+  padding: 10px 0 50px 10px;
+}
+
+.main-program {
+  justify-content: center;
+  background-color: #272a31;
+  background-image: url(/Capstone-Project/assets/deco.png);
+}
+
+.main-program h3 {
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.main-program .card {
+  /* opacity: .9; */
+  background-color: rgba(175, 173, 173, 0.315);
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 1;
+}
+
+.main-program h4 {
+  text-align: center;
+  color: #ea553d;
+  font-weight: 500;
+}
+
+.main-program p {
+  color: #fff;
+  text-align: center;
+}
+
+.main-program i {
+  padding-top: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.main-program .view-more {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.main-program .view-more a {
+  color: #fff;
+}
+
+.dynamic {
+  width: 100%;
+  height: 900px;
+  background-color: #fff;
+}
+
+.partners {
+  width: 100%;
+  min-height: 200px;
+
+  /* height: auto; */
+  background-color: #414246;
+}
+
+.partner-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.partner-images img {
+  width: 100px;
+  height: 40px;
+  margin: 20px;
+}
+
+.partners h2 {
+  color: #98989a;
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+
+.footer {
+  background-color: #d3d3d3;
+}
+
+#footer-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-flex h5 {
+  padding-top: 10px;
+}
+
+.footer img {
+  width: 150px;
+  height: 80px;
+}
+
+/* about css */
+.aboutHero {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2)), url(/Capstone-Project/assets/Ellipse.svg), url(/Capstone-Project/assets/checkbox.svg), url(/Capstone-Project/assets/patt.svg);
+  background-repeat: no-repeat;
+  background-position: center, bottom 58% left 9rem, right 18rem top 78%, top 28% right 90rem, top 20% center, top 80% center;
+  background-size: 100%, 6rem, 7rem, 4rem, 6rem, 14rem;
+  background-attachment: fixed;
+}
+
+.aboutHeroTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutHeroTitle h1 {
+  text-align: center;
+  color: #f74322;
+  font-weight: 900;
+  padding: 50px 0;
+}
+
+.aboutHeroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutHeroText1 {
+  text-align: center;
+  width: 50%;
+  background-color: #fff;
+  padding: 70px 50px;
+  margin: auto;
+}
+
+.aboutHeroText2 {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding: 70px 50px;
+}
+
+.logoSectionContainer {
+  text-align: center;
+}
+
+.logoSectionContainer h1 {
+  padding: 60px 0 30px 0;
+  color: #272a31;
+  font-weight: 900;
+}
+
+.logoSectionContainer p {
+  color: #949494;
+  font-size: 18px;
+  padding-bottom: 50px;
+}
+
+.logoSectionContainer img {
+  box-shadow: #d3d3d300;
+  width: 400px;
+  height: 300px;
+  outline: 0.11875rem solid #dbdde2;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.pastSectionContainer {
+  text-align: center;
+}
+
+.pastSectionContainer h1 {
+  padding: 60px 0 30px 0;
+  color: #272a31;
+  font-weight: 900;
+}
+
+.pastSectionContainer p {
+  color: #949494;
+  font-size: 18px;
+  padding-bottom: 50px;
+}
+
+.twoImageBoxes h1,
+h4 {
+  color: #fff;
+}
+
+.twoImages-1 {
+  background: #c33737;
+  background: linear-gradient(rgba(240, 240, 240, 0.39), rgba(241, 0, 0, 0.589)), url("/Capstone-Project/assets/achievements-milestone.jpg");
+  background-size: cover;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 250px;
+}
+
+.twoImages-2 {
+  background: #c33737;
+  background: linear-gradient(rgba(240, 240, 240, 0.39), rgba(241, 0, 0, 0.589)), url("/Capstone-Project/assets/achievements.jpg");
+  background-size: cover;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 250px;
+}
+
+@media screen and (min-width: 992px) {
+  .main-program .card {
+    width: 24%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-container {
+    display: none;
+  }
+
+  .topSocialBar {
+    display: none;
+  }
+
+  .hero h1 {
+    color: #ea553d;
+    height: auto;
+    width: 100%;
+    padding: 60px 0 0 20px;
+    text-align: left;
+  }
+
+  .hero .heading-4 {
+    padding: 0 0 20px 20px;
+  }
+
+  .hero .hero-text {
+    margin: 6px 0 40px 20px;
+    width: 80%;
+    font-size: 18px;
+  }
+
+  .main-program .card {
+    width: 24%;
+  }
+
+  .footer img {
+    width: 100px;
+    height: 70px;
+  }
+
+  .partners img {
+    width: 100px;
+    height: 50px;
+    margin: 0;
+    padding: 10px;
+  }
+
+
+
+  /* about css */
+  .aboutHeroText1 {
+    width: 90%;
+    padding: 50px 30px;
+  }
+
+  .aboutHeroText2 {
+    width: 90%;
+    margin: 10px;
+  }
+
+  .logoSectionContainer img {
+    box-shadow: #d3d3d39f;
+    width: 350px;
+    height: 250px;
+    outline: 0.11875rem solid #dbdde2;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+}
