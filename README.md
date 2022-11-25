@@ -22,7 +22,7 @@ Git must be installed on you machine.
 ### Setup
 
 Clone this repository by using the command line :
-`git clone https://github.com/asifaminisonline/portfolio_website/`
+`git clone https://asifaminisonline.github.io/Capstone-Project/` 
 
 ### Install
 
