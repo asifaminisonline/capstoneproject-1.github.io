@@ -51,7 +51,6 @@ const ourTeam = [
 
 ourTeam.forEach((element, i) => {
   const team = document.querySelector('#team');
-  console.log(team);
   const card = document.createElement('div');
   card.classList = 'card';
   const teamcard = `
