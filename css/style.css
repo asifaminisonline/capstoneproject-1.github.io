@@ -215,8 +215,11 @@ nav {
   z-index: 1;
 }
 
-.twoImageBoxes h1,
-h4 {
+.twoImageBoxes h1 {
+  color: #fff !important;
+}
+
+.twoImageBoxes h4 {
   color: #fff;
 }
 
