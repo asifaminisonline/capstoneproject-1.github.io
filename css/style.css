@@ -244,7 +244,7 @@ nav {
 
 .main-program .view-more {
   text-align: center;
-  padding: 50px 0px 20px 0px;
+  padding: 50px 0 20px 0;
 }
 
 .main-program .view-more a {
@@ -271,10 +271,12 @@ nav {
   color: #cb4633 !important;
   font-weight: 800;
 }
-.section-layout h2{
-  padding:30px 0px;
-   text-align:center;
+
+.section-layout h2 {
+  padding: 30px 0;
+  text-align: center;
 }
+
 .separator {
   position: relative;
   bottom: 20px;
@@ -563,6 +565,7 @@ nav {
     margin: 0;
     padding: 10px;
   }
+
   .separator {
     position: relative;
     bottom: 20px;
