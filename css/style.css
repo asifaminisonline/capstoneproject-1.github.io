@@ -244,7 +244,7 @@ nav {
 
 .main-program .view-more {
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 0px 20px 0px;
 }
 
 .main-program .view-more a {
@@ -270,6 +270,18 @@ nav {
 #CC-Campaign a {
   color: #cb4633 !important;
   font-weight: 800;
+}
+.section-layout h2{
+  padding:30px 0px;
+   text-align:center;
+}
+.separator {
+  position: relative;
+  bottom: 20px;
+  height: 3px;
+  background-color: #ec5242;
+  width: 75px;
+  margin-left: 47%;
 }
 
 .partner-images {
@@ -551,7 +563,14 @@ nav {
     margin: 0;
     padding: 10px;
   }
-
+  .separator {
+    position: relative;
+    bottom: 20px;
+    height: 3px;
+    background-color: #ec5242;
+    width: 75px;
+    margin-left: 42%;
+  }
 
 
   /* about css */
